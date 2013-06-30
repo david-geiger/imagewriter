@@ -625,10 +625,10 @@ AboutLabel::mousePressEvent(QMouseEvent *event)
     Q_UNUSED(event);
     QMessageBox about(QMessageBox::Information, "About Mageia Imagewriter",
                    "The <b>Mageia Imagewriter</b> is (C) 2012, Mageia Linux<br><br>\
-+                   Based on <b>SUSE Studio Imagewriter</b> by SUSE Linux Products GmbH<br><br>\
-+                   <b>License:</b> GPL v2 license.  You can find the source code on github: https://github.com/david-geiger/imagewriter.<br><br>\
-+                   <b>Author:</b> It was written by Matt Barringer &lt;matt@incoherent.de&gt;<br><br>\
-+                   <b>Forked:</b> by David Geiger &lt;david.david@mageialinux-online.org&gt;.");
+                    Based on <b>SUSE Studio Imagewriter</b> by SUSE Linux Products GmbH<br><br>\
+                    <b>License:</b> GPL v2 license.  You can find the source code on github: https://github.com/david-geiger/imagewriter.<br><br>\
+                    <b>Author:</b> It was written by Matt Barringer &lt;matt@incoherent.de&gt;<br><br>\
+                    <b>Forked:</b> by David Geiger &lt;david.david@mageialinux-online.org&gt;.");
     about.exec();
 }
 
