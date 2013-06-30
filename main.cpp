@@ -18,6 +18,7 @@
  *  you may find current contact information at www.novell.com
  *  
  *  Author: Matt Barringer <mbarringer@suse.de>
+ *  Forked: David Geiger <david.david@mageialinux-online.org>
  *  
  */
 
@@ -85,7 +86,7 @@ main (int argc, char *argv[])
                 kioskMode = true;
                 break;
             case 'v':
-                fprintf(stdout, "SUSE Studio Imagewriter %s\nWritten by Matt Barringer <mbarringer@suse.de>\n", APP_VERSION);
+                fprintf(stdout, "Mageia Imagewriter %s\nBased on SUSE Studio Imagewriter written by Matt Barringer <mbarringer@suse.de>\n", APP_VERSION);
                 exit(0);
                 break;
             case 'm':
