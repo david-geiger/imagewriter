@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=SUSE Studio Imagewriter
-Name[fr]=SUSE Studio Imagewriter
+Name=Mageia Imagewriter
+Name[fr]=Mageia Imagewriter
 GenericName=USB key writer
 GenericName[fr]=Créateur de clé USB bootable 
 Exec=imagewriter_suse %f
