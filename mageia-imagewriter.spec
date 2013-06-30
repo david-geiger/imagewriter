@@ -1,4 +1,5 @@
-%define rname     imagewriter_suse
+%define rname     imagewriter_mageia
+%define oname     imagewriter
 
 Name:	    mageia-imagewriter
 Version:	1.10
@@ -25,7 +26,7 @@ Based on SUSE Studio Imagewriter
 
 # rename_icons(Otherwise conflict with the package usb-imagewriter)
 for png in 128x128 64x64 32x32; do
-mv ./icons/${png}/%{name}.png ./icons/${png}/%{rname}.png
+mv ./icons/${png}/%{oname}.png ./icons/${png}/%{rname}.png
 done
 
 %build
@@ -36,7 +37,7 @@ make CFLAGS="$RPM_OPT_FLAGS -DKIOSKHACK"
 %makeinstall_std
 mkdir -p %{buildroot}%{_sbindir}
 # rename_binary(Otherwise conflict with the package usb-imagewriter)
-mv %{buildroot}%{_bindir}/%{name} %{buildroot}%{_sbindir}/%{rname}
+mv %{buildroot}%{_bindir}/%{oname} %{buildroot}%{_sbindir}/%{rname}
 cp %{name}.desktop %{buildroot}%{_datadir}/applications
 
 # Adjust for console-helper magic
