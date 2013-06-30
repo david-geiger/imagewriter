@@ -1,12 +1,12 @@
 %define rname     imagewriter_suse
 
-Name:	mageia-imagewriter
+Name:	    mageia-imagewriter
 Version:	1.10
 Release:	%mkrel 1
 Summary:	Utility for writing raw disk images & hybrid ISOs to USB keys
 License:	GPLv2
-Group:	System/Configuration 
-Url:		https://github.com/mbarringer/imagewriter
+Group:	  System/Configuration 
+Url:		  https://github.com/david-geiger/imagewriter
 Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	gcc-c++
@@ -16,6 +16,8 @@ BuildRequires:	udisks2
 
 %description
 A graphical utility for writing raw disk images & hybrid ISOs to USB keys
+
+Based on SUSE Studio Imagewriter
 
 %prep
 %setup -q
