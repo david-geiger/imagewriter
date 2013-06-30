@@ -63,7 +63,7 @@ MainWindow::MainWindow (Platform *platform,
     useOldUI();
 #endif
 
-    setWindowTitle(QString("SUSE Studio Imagewriter %1").arg(APP_VERSION));
+    setWindowTitle(QString("Mageia Imagewriter %1").arg(APP_VERSION));
     reloadDeviceList(cmddevice);
 
     if (cmdfile != NULL)
@@ -231,7 +231,7 @@ MainWindow::useOldUI()
 
     file = new QLabel(tr("File"));
     device = new QLabel(tr("Device"));
-    version = new QLabel(QString("SUSE Studio Imagewriter %1").arg(APP_VERSION));
+    version = new QLabel(QString("Mageia Imagewriter %1").arg(APP_VERSION));
 
     buttonLayout = new QHBoxLayout;
     buttonLayout->addWidget(exitButton);
@@ -623,10 +623,12 @@ void
 AboutLabel::mousePressEvent(QMouseEvent *event)
 {
     Q_UNUSED(event);
-    QMessageBox about(QMessageBox::Information, "About SUSE Studio Imagewriter",
-                   "The <b>SUSE Studio Imagewriter</b> is (C) 2012, SUSE Linux Products GmbH<br><br>\
-                   It is cheerfully released under the GPL v2 license.  You can find the source code on github: https://github.com/mbarringer/imagewriter<br><br>\
-                   It was written by Matt Barringer &lt;matt@incoherent.de&gt;.  Please send complaints directly to him.");
+    QMessageBox about(QMessageBox::Information, "About Mageia Imagewriter",
+                   "The <b>Mageia Imagewriter</b> is (C) 2012, Mageia Linux<br><br>\
++                   Based on <b>SUSE Studio Imagewriter</b> by SUSE Linux Products GmbH<br><br>\
++                   <b>License:</b> GPL v2 license.  You can find the source code on github: https://github.com/david-geiger/imagewriter.<br><br>\
++                   <b>Author:</b> It was written by Matt Barringer &lt;matt@incoherent.de&gt;<br><br>\
++                   <b>Forked:</b> by David Geiger &lt;david.david@mageialinux-online.org&gt;.");
     about.exec();
 }
 
