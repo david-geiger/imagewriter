@@ -18,6 +18,7 @@
  *  you may find current contact information at www.novell.com
  *  
  *  Author: Matt Barringer <mbarringer@suse.de>
+ *  Forked: David Geiger <david.david@mageialinux-online.org>
  *
  */
 
@@ -164,7 +165,7 @@ PlatformUdisks::getNewDevice(QString devicePath)
     if (vendor == "")
     {
         if (mKioskMode)
-            devItem->setVendorString("SUSE Studio USB Key");
+            devItem->setVendorString("Mageia USB Key");
         else
             devItem->setVendorString("Unknown Device");
     }
