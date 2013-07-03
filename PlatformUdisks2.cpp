@@ -154,7 +154,7 @@ PlatformUdisks2::buildDevice(QVariantMap &blockProperties, QVariantMap &drivePro
     if (vendor == "")
     {
         if (mKioskMode)
-            devItem->setVendorString("SUSE Studio USB Key");
+            devItem->setVendorString("Mageia USB Key");
         else
             devItem->setVendorString("Unknown Device");
     }
